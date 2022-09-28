@@ -2,6 +2,10 @@
 
 Sample React Native app
 
+![Demo](https://github.com/geoffnix/bookstore/raw/main/bookstore-demo.gif)
+
+[Longer video demo](https://github.com/geoffnix/bookstore/raw/main/bookstore-demo.mp4)
+
 # Notes
 
 I tried to build everything from scratch with core RN components.  The one exception was to use React-Navigation.  I wanted type safety, so I started with the TypeScript template.
