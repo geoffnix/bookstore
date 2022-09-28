@@ -6,7 +6,6 @@ import { Image, StyleSheet, View } from "react-native";
 import { SearchResult, SearchType } from "../Models/SearchResult";
 import SearchDetailView from "./Search/SearchDetailView";
 import SearchListView from "./Search/SearchListView";
-import type { RouteProp } from '@react-navigation/native';
 
 export type TabScreenParamList = {
     Author: undefined;
@@ -26,7 +25,7 @@ const SearchStack = createNativeStackNavigator<SearchStackParamList>()
 
 const AppNavigationContainer = () => {
 
-  const resultBasedTitle = ({ route: RouteProp }) => ({ title: route.params.result.title })
+  const resultBasedTitle = ({ route }) => ({ title: route.params.result.title })
 
   function SearchStackScreen() {
     return (
